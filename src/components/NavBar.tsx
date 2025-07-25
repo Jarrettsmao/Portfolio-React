@@ -4,7 +4,7 @@ import { X, Menu } from 'lucide-react';
 
 
 const navItems = [
-    {name: "Home", href: "#home"},
+    {name: "Home", href: "#personal"},
     {name: "About", href: "#about"},
     {name: "Skills", href: "#skills"},
     {name: "Projects", href: "#projects"},
@@ -33,7 +33,7 @@ export const NavBar = () => {
             <div className="container flex items-center justify-between">
                 <a 
                     className="text-xl font-bold text-primary flex items-center" 
-                    href="#home"
+                    href="#personal"
                 >
                     <span className="relative z-10">
                         <span className="text-glow text-foreground"> Jarrett Mao </span> Portfolio
@@ -58,7 +58,7 @@ export const NavBar = () => {
                 <button 
                     onClick={() => setIsMenuOpen((prev) => !prev)}
                     className="md:hidden p-2 text-foreground z-50"   
-                    aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
+                    aria-label={isMenuOpen ? "Close Menu" : "Open Menu"} //helps for accessbility 
                 > 
                     {isMenuOpen 
                         ? <X size={24}/> 
