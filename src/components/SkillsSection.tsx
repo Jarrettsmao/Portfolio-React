@@ -1,7 +1,12 @@
 import { useState } from "react";
 import { cn } from "../lib/utils";
 
-const skills = [
+interface Skill {
+    name: string;
+    category: Category;
+}
+
+const skills: Skill[] = [
     {name: "C#", category: "coding"},
     {name: "JavaScript", category: "coding"},
     {name: "HTML/CSS", category: "coding"},
@@ -36,7 +41,9 @@ const skills = [
 
 const categories = ["all", "coding", "frontend", "backend", "tools/engine", "linguistic"]
 
-const categoryColors = {
+type Category = "coding" | "linguistic" | "frontend" | "backend" | "tools/engine";
+
+const categoryColors: Record<Category, string> = {
   "coding": "#3b82f6", // Blue in hex
   "linguistic": "#10b981", // Green in RGB
   "frontend": "#9a61feff", // Purple in HSL
