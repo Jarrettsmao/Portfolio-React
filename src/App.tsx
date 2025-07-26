@@ -1,7 +1,7 @@
 // import Component from "@/component.jsx"
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import Home from "@/pages/Home.tsx";
-import NotFound from "@/pages/NotFound.tsx";
+import Home from "./pages/Home.tsx";
+import NotFound from "./pages/NotFound.tsx";
 
 function App() {
   return (
