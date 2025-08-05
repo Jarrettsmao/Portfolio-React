@@ -77,7 +77,7 @@ export const ProjectsSection = () => {
                             </p>
 
                             
-                            <div className="mt-auto flex justify-start">
+                            <div className="mt-auto flex justify-start space-x-4">
                                 {project.demoUrl && (
                                     <a
                                         href={project.demoUrl}
