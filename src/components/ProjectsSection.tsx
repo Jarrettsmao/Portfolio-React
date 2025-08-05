@@ -1,4 +1,4 @@
-import { ArrowRight, Github } from "lucide-react";
+import { ArrowRight, ExternalLink, Github } from "lucide-react";
 
 const projects = [
     {
@@ -7,7 +7,7 @@ const projects = [
          description: "Restaurant review site using Google Maps, ChatGPT, P5, for fun caveman-speak reviews with doodles. ",
          image: "/projects/grunt.png",
          tags: ["MongoDB", ".NET", "API"],
-        //  demoUrl: "#",
+         demoUrl: "https://grunt.onrender.com/Home",
          githubUrl: "https://github.com/Jarrettsmao/Grunt"
     },
 
@@ -76,15 +76,18 @@ export const ProjectsSection = () => {
                                 {project.description}
                             </p>
 
-                            {project.githubUrl && (
-                                <div className="mt-auto flex justify-start">
-                                    {/* <a
-                                        href={project.githubUrl}
+                            
+                            <div className="mt-auto flex justify-start">
+                                {project.demoUrl && (
+                                    <a
+                                        href={project.demoUrl}
                                         target="_blank"
                                         className="text-foreground/80 hover:text-primary transition-colors duration-300"
                                     >
                                         <ExternalLink size={20} />
-                                    </a> */}
+                                    </a>
+                                )}
+                                {project.githubUrl && (
                                     <a
                                         href={project.githubUrl}
                                         target="_blank"
@@ -92,8 +95,8 @@ export const ProjectsSection = () => {
                                     >
                                         <Github size={20} />
                                     </a>
-                                </div>
-                            )}
+                                )}
+                            </div>
                         </div>
                     </div>
                 ))}
