@@ -8,7 +8,7 @@ const projects = [
       "Real-time multiplayer hot potato game using Websockets with room lifecycle management.",
     image: "/projects/hot-foetato.png",
     tags: ["Unity", "Typescript", "WebSockets", "React"],
-    // demoUrl: "https://grunt.onrender.com/Home",
+    demoUrl: "https://hot-foetato.vercel.app/",
     githubUrl: "https://github.com/Jarrettsmao/Hot-Foetato",
   },
   {
